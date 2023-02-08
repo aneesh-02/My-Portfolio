@@ -1,12 +1,12 @@
 import "./App.css";
 import AppBar from "./AppBar.jsx";
-import About from "./About.jsx";
+import Home from "./Home.jsx";
 
 function App() {
   return (
     <div className="App">
       <AppBar />
-      <About/>
+      <Home/>
     </div>
   );
 }
