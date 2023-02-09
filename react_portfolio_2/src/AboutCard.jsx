@@ -13,7 +13,7 @@ const card = (
         Hi, I'm Aneesh!
       </Typography>
       <Typography variant="h5" component="div">
-        SOFTWARE DEVELOPER
+        FULLSTACK DEVELOPER
       </Typography>
       <Typography sx={{ mb: 1.5 }} color="text.secondary"></Typography>
       <Typography variant="body2">

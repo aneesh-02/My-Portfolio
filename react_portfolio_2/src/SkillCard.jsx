@@ -7,23 +7,22 @@ import { CardActionArea } from "@mui/material";
 
 export default function SkillCard(props) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card id="skill-card" sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
           image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
+          alt="skill icon"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-          {props.title} 
+            {props.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
             <p class="experience-description text-justify">
               {" "}
-              {props.description}
-              {" "}
+              {props.description}{" "}
             </p>
           </Typography>
         </CardContent>

@@ -2,6 +2,11 @@ body::-webkit-scrollbar {
   display: none; 
 }
 
+body {
+  background: rgb(155,152,204);
+  background: radial-gradient(circle, rgba(155,152,204,1) 0%, rgba(55,55,97,1) 50%, rgba(0,17,112,1) 100%);
+}
+
 #AppBar {
 background-color: rgba(0, 0, 0);
 }
@@ -16,22 +21,24 @@ section {
 
 #home-container
 {
-  background-color: rgba(215, 113, 113, 0.875);
+  /* background-color: rgba(215, 113, 113, 0.875); */
   height: 90vh;
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #home-container1
 {
-  background-color: rgba(82, 93, 215, 0.875);
+  /* background-color: rgba(82, 93, 215, 0.875); */
   border-width: 5px;
   border-color: black;
-  width: 35%;
+  width: 30%;
   position: relative;
   display: flex;
+  flex-direction: row;
   margin: 0.5%;
   justify-content: center;
   align-items: center;
@@ -39,7 +46,7 @@ section {
 
 #home-container2
 {
-  background-color: rgba(133, 140, 217, 0.875);
+  /* background-color: rgba(133, 140, 217, 0.875); */
   /* height: 100vh; */
   width: 65%;
   position: relative;
@@ -51,20 +58,45 @@ section {
 
 #skills-container
 {
-  background-color: rgba(139, 215, 113, 0.875);
-  height: 50vh;
+  /* background-color: rgba(139, 215, 113, 0.875); */
+  /* height: 50vh; */
   width: 100%;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-#experience-container
+#skill-card
+{ 
+  margin: 1%;
+}
+
+
+#header-container
 {
-  background-color: rgba(113, 215, 195, 0.875);
-  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.875);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 60px;
+  padding: 0.7%;
+}
+
+#projects-container
+{
+  /* background-color: rgba(113, 215, 195, 0.875); */
+  /* height: 100vh; */
   width: 100%;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+#project-card
+{ 
+  margin: 1%;
+  /* width: 30%; */
+}
+

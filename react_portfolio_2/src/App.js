@@ -1,6 +1,7 @@
 import "./App.css";
 import AppBar from "./AppBar.jsx";
 import Home from "./Home.jsx";
+import Header from "./Header";
 import Skills from "./Skill";
 import Projects from "./Projects";
 
@@ -9,8 +10,12 @@ function App() {
     <div className="App">
       <AppBar />
       <Home />
+      <Header text="SKILLS" />
       <Skills />
-      <Projects/>
+      <Header text="PROJECTS" />
+      <Projects />
+      <Header text="CONTACT" />
+      {/* <Home /> */}
     </div>
   );
 }
