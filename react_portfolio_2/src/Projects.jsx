@@ -1,0 +1,8 @@
+import React from "react";
+import { Container } from "@mui/material";
+
+const Projects = () => {
+  return <Container maxWidth="xl" id="experience-container"></Container>;
+};
+
+export default Projects;

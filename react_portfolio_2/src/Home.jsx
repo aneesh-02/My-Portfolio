@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <section>
       <Container maxWidth="xl" id="home-container">
-      <HomeDP/>
-      <HomeAbout/>
+        <HomeDP />
+        <HomeAbout />
       </Container>
     </section>
   );
