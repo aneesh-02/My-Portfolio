@@ -92,6 +92,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  /* padding: 1%; */
 }
 
 #project-card
@@ -100,3 +101,20 @@ section {
   /* width: 30%; */
 }
 
+#contact-container
+{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1%;
+}
+
+#connect-card
+{
+  /* text-align: center; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+}

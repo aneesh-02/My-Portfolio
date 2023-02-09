@@ -4,7 +4,7 @@ import Home from "./Home.jsx";
 import Header from "./Header";
 import Skills from "./Skill";
 import Projects from "./Projects";
-
+import Contact from "./Contact";
 function App() {
   return (
     <div className="App">
@@ -15,7 +15,7 @@ function App() {
       <Header text="PROJECTS" />
       <Projects />
       <Header text="CONTACT" />
-      {/* <Home /> */}
+      <Contact/>
     </div>
   );
 }

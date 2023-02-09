@@ -8,32 +8,41 @@ import Typography from "@mui/material/Typography";
 
 const card = (
   <React.Fragment>
-    <CardContent>
-      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        Hi, I'm Aneesh!
-      </Typography>
+    <CardContent id="connect-card">
+      <Typography
+        sx={{ fontSize: 14 }}
+        color="text.secondary"
+        gutterBottom
+      ></Typography>
       <Typography variant="h5" component="div">
-        FULLSTACK DEVELOPER
+        Let's work together!
       </Typography>
       <Typography sx={{ mb: 1.5 }} color="text.secondary"></Typography>
       <Typography variant="body2">
-        A highly skilled and motivated Computer Science Graduate with
-        professional experience in Software Analyses and Testing.
-        <br />
-        Equipped with a solid foundation in software engineering and a range of
-        programming languages and technologies.
+        If you're interested in working together or just want to say hi, feel
+        free to reach out to me through the below links. I look forward to hearing
+        from you :)
       </Typography>
-      <CardActions>
+      <CardActions id="connect-card">
         <br />
         <Button size="small" variant="contained">
-          My Resume
+          Gmail
+        </Button>
+        <Button size="small" variant="contained">
+          GitHub
+        </Button>
+        <Button size="small" variant="contained">
+          LinkedIn
+        </Button>
+        <Button size="small" variant="contained">
+          Resume
         </Button>
       </CardActions>
     </CardContent>
   </React.Fragment>
 );
 
-export default function AboutCard() {
+export default function ContactCard() {
   return (
     <Box sx={{ minWidth: 275 }}>
       <Card variant="outlined">{card}</Card>
