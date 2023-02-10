@@ -40,12 +40,11 @@ export default function ProjectCard(props) {
           component="img"
           alt="Project Image"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image={props.image}
         />
-
+        <br />
         <Typography variant="body2" color="text.secondary">
-          {" "}
-          {props.description}{" "}
+          <p class="experience-description text-justify">{props.description}</p>
         </Typography>
       </CardContent>
 
@@ -67,7 +66,7 @@ export default function ProjectCard(props) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph> {props.details}</Typography>
+          <Typography> {props.details}</Typography>
         </CardContent>
       </Collapse>
     </Card>

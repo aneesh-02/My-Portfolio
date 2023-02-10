@@ -24,7 +24,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" id="AppBar">
+    <AppBar position="relative" id="AppBar">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Title Typography for normal size */}
@@ -100,7 +100,7 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
 
-          {/* Title Typography fro mobile size*/}
+          {/* Title Typography for mobile size*/}
           <Typography
             variant="h5"
             noWrap

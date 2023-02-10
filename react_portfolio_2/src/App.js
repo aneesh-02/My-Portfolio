@@ -14,7 +14,7 @@ function App() {
       <Skills />
       <Header text="PROJECTS" />
       <Projects />
-      <Header text="CONTACT" />
+      <Header text="CONNECT" />
       <Contact/>
     </div>
   );

@@ -10,13 +10,13 @@ export default function SkillCard(props) {
     <Card id="skill-card" sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
-          component="img"
+          component="img" 
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image={props.image}
           alt="skill icon"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" align="center">
             {props.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
