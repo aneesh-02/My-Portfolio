@@ -3,8 +3,8 @@ body::-webkit-scrollbar {
 }
 
 body {
-  background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(114,119,142,1) 100%);
+  /* background: rgb(255,255,255); */
+  /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(114,119,142,1) 100%); */
 }
 
 a:link {
@@ -21,6 +21,7 @@ a:visited {
 
 #AppBar {
 /* background-color: rgba(0, 0, 0); */
+/* position: sticky; */
 }
 
 section {
@@ -52,9 +53,11 @@ section {
 
 #AboutCard
 {
-  opacity: 1;
+  /* opacity: 1; */
+  background-color: "transparent";
+  border: "none";
   /* background: rgb(155,152,204); */
-  /* background-color: rgba(215, 113, 113, 0.875); */
+  /* background-color: rgba(215, 113, 113, 1); */
 }
 
 
@@ -78,16 +81,16 @@ section {
 #header-container
 {
   /* background-color: rgba(0, 0, 0, 0.875); */
-  color: white;
+  /* color: white; */
   font-Family: "monospace";
   text-align: center;
   font-size: 60px;
   padding: 0.7%;
   margin-bottom: 0.5%;
   margin-top: 2%;
-  border-top: 1px;
-  border-top-style: solid;
-  border-color: black;
+  /* border-top: 1px; */
+  /* border-top-style: solid; */
+  /* border-color: black; */
 
   
 }

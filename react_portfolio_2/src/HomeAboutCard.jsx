@@ -5,6 +5,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import resume from "./Images/resume.pdf";
 
 const card = (
   <React.Fragment>
@@ -26,9 +27,12 @@ const card = (
 
       <CardActions>
         <br />
-        <Button size="small" variant="contained">
-          My Resume
-        </Button>
+        <br />
+        <a href={resume}>
+          <Button size="medium" variant="contained">
+            My Resume
+          </Button>
+        </a>
       </CardActions>
     </CardContent>
   </React.Fragment>
@@ -37,7 +41,12 @@ const card = (
 export default function HomeAboutCard() {
   return (
     <Box sx={{ minWidth: 275 }}>
-      <Card variant="outlined">{card}</Card>
+      <Card
+        variant="outlined"
+        style={{ backgroundColor: "transparent", border: "none" }}
+      >
+        {card}
+      </Card>
     </Box>
   );
 }

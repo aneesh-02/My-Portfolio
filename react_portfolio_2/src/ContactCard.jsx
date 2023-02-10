@@ -10,6 +10,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArticleIcon from "@mui/icons-material/Article";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import resume from "./Images/resume.pdf";
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -55,9 +56,11 @@ const card = (
         </Button>{" "}
       </a>
       &nbsp;
-      <Button size="small" variant="contained">
-        <ArticleIcon /> &nbsp; Resume
-      </Button>
+      <a href={resume}>
+        <Button size="small" variant="contained">
+          <ArticleIcon /> &nbsp; Resume
+        </Button>
+      </a>
       {/* </CardActions> */}
       <br /> <br />
       <div>

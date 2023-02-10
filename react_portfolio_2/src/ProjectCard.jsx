@@ -45,16 +45,23 @@ export default function ProjectCard(props) {
         <br />
         <Typography variant="body2" color="text.secondary">
           <p class="experience-description text-justify">{props.description}</p>
+          <p class="experience-description text-justify">
+            {props.description2}
+          </p>
         </Typography>
       </CardContent>
 
       <CardActions>
-        <Button size="small" variant="contained">
-          Demo
-        </Button>
-        <Button size="small" variant="contained">
-          Code
-        </Button>
+        <a href={props.path1}>
+          <Button size="small" variant="contained">
+            Demo
+          </Button>
+        </a>
+        <a href={props.path2}>
+          <Button size="small" variant="contained">
+            Code
+          </Button>
+        </a>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
