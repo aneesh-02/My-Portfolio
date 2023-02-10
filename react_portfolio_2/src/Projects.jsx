@@ -1,13 +1,17 @@
 import React from "react";
 import { Container } from "@mui/material";
 import ProjectCard from "./ProjectCard";
+import calculatorSc from "./Images/calculatorSc.png";
+import SdSc from "./Images/SdSc.png";
+import snakeSc from "./Images/snakeSc.png";
+import GvSc from "./Images/GvSc.png";
 
 const Projects = () => {
   return (
     <Container maxWidth="xl" id="projects-container">
       <ProjectCard
         title="Appointment Booking Site"
-        image="https://www.elmhurst.edu/wp-content/uploads/2018/12/5-skills-project-management-degree-elmhurst-college-infographic-thumb.jpg"
+        image={GvSc}
         description="HTML, CSS, JavaScript, Bootstrap, jQuery"
         details="• Designed a website for booking Covid-19 vaccine appointments. 
         • Implemented authentication for login page. 
@@ -17,7 +21,7 @@ const Projects = () => {
       />
       <ProjectCard
         title="Contacts List App"
-        image="https://www.elmhurst.edu/wp-content/uploads/2018/12/5-skills-project-management-degree-elmhurst-college-infographic-thumb.jpg"
+        image={SdSc}
         description="Java, Swing, JDBC, MySQL, XAMPP"
         details="• Created a Java Window Application to manage a database system.
         • Implemented the database in MySQL using phpMyAdmin and XAMPP server. 
@@ -26,7 +30,7 @@ const Projects = () => {
       />
       <ProjectCard
         title="Snake Game"
-        image="https://www.elmhurst.edu/wp-content/uploads/2018/12/5-skills-project-management-degree-elmhurst-college-infographic-thumb.jpg"
+        image={snakeSc}
         description="Java, Swing, AWT, JPanel"
         details="• Developed a classic 2D Snake Game in Java using Swing framework. 
         • Used Java Abstract Window Toolkit to design the Graphical User Interface of the application.
@@ -43,7 +47,7 @@ const Projects = () => {
       />
       <ProjectCard
         title="Music Player Website"
-        image="https://www.elmhurst.edu/wp-content/uploads/2018/12/5-skills-project-management-degree-elmhurst-college-infographic-thumb.jpg"
+        image={SdSc}
         description="HTML, CSS"
         details="• Built a website for streaming music from a local database without the help of any framework. 
         • Website allows user to browse and select songs across various Playlists, Artists, Genres etc.
@@ -51,7 +55,7 @@ const Projects = () => {
       />
       <ProjectCard
         title="Ping Pong"
-        image="https://www.elmhurst.edu/wp-content/uploads/2018/12/5-skills-project-management-degree-elmhurst-college-infographic-thumb.jpg"
+        image={calculatorSc}
         description="HTML, CSS, JavaScript"
         details="• Developed a game of Ping Pong for 2 players. 
         • DOM and Js events are used to enable users to control 2 bats simultaneously."

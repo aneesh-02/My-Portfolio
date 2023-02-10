@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Container maxWidth="xl" id="home-container">
       <HomeButtons />
-      <HomeDP />
+      {/* <HomeDP /> */}
       <HomeAboutCard />
     </Container>
   );

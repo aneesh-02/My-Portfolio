@@ -3,8 +3,20 @@ body::-webkit-scrollbar {
 }
 
 body {
-  /* background: rgb(155,152,204); */
-  /* background: radial-gradient(circle, rgba(155,152,204,1) 0%, rgba(55,55,97,1) 50%, rgba(0,17,112,1) 100%); */
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(114,119,142,1) 100%);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+#arrow-icon {
+  cursor: pointer;
 }
 
 #AppBar {

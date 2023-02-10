@@ -11,6 +11,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArticleIcon from "@mui/icons-material/Article";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
 const card = (
   <React.Fragment>
     <CardContent id="connect-card" align="center">
@@ -30,24 +37,34 @@ const card = (
       </Typography>
       {/* <CardActions id="connect-card"> */}
       <br />
-      <Button size="small" variant="contained">
-        <EmailIcon /> &nbsp; Gmail
-      </Button>{" "}
+      <a href="mailto:aneeshsharmachd@gmail.com">
+        <Button size="small" variant="contained">
+          <EmailIcon /> &nbsp; Gmail
+        </Button>{" "}
+      </a>{" "}
       &nbsp;
-      <Button size="small" variant="contained">
-        <GitHubIcon /> &nbsp; GitHub
-      </Button>{" "}
+      <a href="https://github.com/aneesh-02">
+        <Button size="small" variant="contained">
+          <GitHubIcon /> &nbsp; GitHub
+        </Button>{" "}
+      </a>
       &nbsp;
-      <Button size="small" variant="contained">
-        <LinkedInIcon /> &nbsp; LinkedIn
-      </Button>{" "}
+      <a href="https://www.linkedin.com/in/aneesh-sharma-02/">
+        <Button size="small" variant="contained">
+          <LinkedInIcon /> &nbsp; LinkedIn
+        </Button>{" "}
+      </a>
       &nbsp;
       <Button size="small" variant="contained">
         <ArticleIcon /> &nbsp; Resume
       </Button>
       {/* </CardActions> */}
       <br /> <br />
-      <KeyboardArrowUpIcon />
+      <div>
+        <div id="arrow-icon" onClick={scrollToTop}>
+          <KeyboardArrowUpIcon />
+        </div>
+      </div>
     </CardContent>
   </React.Fragment>
 );
