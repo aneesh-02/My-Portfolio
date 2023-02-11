@@ -12,7 +12,11 @@ import Zoom from "@mui/material/Zoom";
 
 export default function HomeButtons() {
   return (
-    <Card id="home-buttons">
+    <Card
+      id="home-buttons"
+      variant="outlined"
+      style={{ backgroundColor: "transparent", border: "none" }}
+    >
       <Box sx={{ "& > :not(style)": { m: 1 } }}>
         <ButtonGroup
           orientation="vertical"

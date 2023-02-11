@@ -9,6 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+// import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const pages = ["Skills", "Projects", "Connect"];
 
@@ -24,6 +25,7 @@ function ResponsiveAppBar() {
   };
 
   return (
+    // <Router>
     <AppBar position="relative" id="AppBar">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -54,6 +56,7 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
+                {/* <Link to={`/${page.toLowerCase()}`}>{page}</Link> */}
                 {page}
               </Button>
             ))}
@@ -122,6 +125,7 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
     </AppBar>
+    // </Router>
   );
 }
 export default ResponsiveAppBar;
