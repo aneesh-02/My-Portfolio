@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react_portfolio_2/static/css/main.0ebc791d.css",
-    "main.js": "/react_portfolio_2/static/js/main.8a2ce1ff.js",
-    "static/media/SdSc.png": "/react_portfolio_2/static/media/SdSc.eddcd6600270a6b8a838.png",
-    "static/media/resume.pdf": "/react_portfolio_2/static/media/resume.600c93829540af7a68b3.pdf",
-    "static/media/TodoSc.png": "/react_portfolio_2/static/media/TodoSc.447365868f9288bc6ee7.png",
-    "static/media/GvSc.png": "/react_portfolio_2/static/media/GvSc.29b88b483138e4ae79b6.png",
-    "static/media/avatar.png": "/react_portfolio_2/static/media/avatar.c0ba2b09a5c85e3a8488.png",
-    "static/media/snakeSc.png": "/react_portfolio_2/static/media/snakeSc.d0d9e0aabe261b932292.png",
-    "static/media/tttSc.png": "/react_portfolio_2/static/media/tttSc.bb3e032f0adb8157d8f6.png",
-    "static/media/calculatorSc.png": "/react_portfolio_2/static/media/calculatorSc.9212ac58407aefcaeff7.png",
-    "index.html": "/react_portfolio_2/index.html",
-    "main.0ebc791d.css.map": "/react_portfolio_2/static/css/main.0ebc791d.css.map",
-    "main.8a2ce1ff.js.map": "/react_portfolio_2/static/js/main.8a2ce1ff.js.map"
+    "main.css": "/My-Portfolio/static/css/main.0ebc791d.css",
+    "main.js": "/My-Portfolio/static/js/main.d1cfce34.js",
+    "static/media/SdSc.png": "/My-Portfolio/static/media/SdSc.eddcd6600270a6b8a838.png",
+    "static/media/resume.pdf": "/My-Portfolio/static/media/resume.600c93829540af7a68b3.pdf",
+    "static/media/TodoSc.png": "/My-Portfolio/static/media/TodoSc.447365868f9288bc6ee7.png",
+    "static/media/GvSc.png": "/My-Portfolio/static/media/GvSc.29b88b483138e4ae79b6.png",
+    "static/media/avatar.png": "/My-Portfolio/static/media/avatar.c0ba2b09a5c85e3a8488.png",
+    "static/media/snakeSc.png": "/My-Portfolio/static/media/snakeSc.d0d9e0aabe261b932292.png",
+    "static/media/tttSc.png": "/My-Portfolio/static/media/tttSc.bb3e032f0adb8157d8f6.png",
+    "static/media/calculatorSc.png": "/My-Portfolio/static/media/calculatorSc.9212ac58407aefcaeff7.png",
+    "index.html": "/My-Portfolio/index.html",
+    "main.0ebc791d.css.map": "/My-Portfolio/static/css/main.0ebc791d.css.map",
+    "main.d1cfce34.js.map": "/My-Portfolio/static/js/main.d1cfce34.js.map"
   },
   "entrypoints": [
     "static/css/main.0ebc791d.css",
-    "static/js/main.8a2ce1ff.js"
+    "static/js/main.d1cfce34.js"
   ]
 }
