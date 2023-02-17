@@ -9,9 +9,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-// import { BrowserRouter as Router, Link } from "react-router-dom";
-
-const pages = ["Skills", "Projects", "Connect"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -24,8 +21,21 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
+  const handleSkillsClick = () => {
+    const skillsElement = document.getElementById("skills-container"); // Get the Skills component by its ID
+    skillsElement.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleProjectsClick = () => {
+    const skillsElement = document.getElementById("projects-container"); // Get the Skills component by its ID
+    skillsElement.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleConnectClick = () => {
+    const skillsElement = document.getElementById("contact-container"); // Get the Skills component by its ID
+    skillsElement.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    // <Router>
     <AppBar position="relative" id="AppBar">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -50,16 +60,9 @@ function ResponsiveAppBar() {
 
           {/* pages box for normal size   */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {/* <Link to={`/${page.toLowerCase()}`}>{page}</Link> */}
-                {page}
-              </Button>
-            ))}
+            <div onClick={handleSkillsClick}>SKILLS</div> &nbsp;
+            <div onClick={handleProjectsClick}>PROJECTS</div> &nbsp;
+            <div onClick={handleConnectClick}>CONNECT</div> &nbsp;
           </Box>
 
           {/*pages box for mobile size */}
@@ -95,11 +98,13 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem>
+                <Typography textAlign="center">
+                  <div onClick={handleSkillsClick}>SKILLS</div> &nbsp;
+                  <div onClick={handleProjectsClick}>PROJECTS</div> &nbsp;
+                  <div onClick={handleConnectClick}>CONNECT</div> &nbsp;
+                </Typography>
+              </MenuItem>
             </Menu>
           </Box>
 
@@ -125,7 +130,6 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
     </AppBar>
-    // </Router>
   );
 }
 export default ResponsiveAppBar;
