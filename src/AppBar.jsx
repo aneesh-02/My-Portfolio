@@ -41,7 +41,8 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="/"
+            onClick={() => handleNavigationClick("home-container")}
+            style={{ cursor: "pointer" }}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -57,18 +58,28 @@ function ResponsiveAppBar() {
 
           {/* pages box for normal size   */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <div onClick={() => handleNavigationClick("skills-container")}>
+            &nbsp;
+            <div
+              style={{ cursor: "pointer" }}
+              onClick={() => handleNavigationClick("skills-container")}
+            >
               SKILLS
             </div>{" "}
-            &nbsp;
-            <div onClick={() => handleNavigationClick("projects-container")}>
+            &nbsp; &nbsp;
+            <div
+              style={{ cursor: "pointer" }}
+              onClick={() => handleNavigationClick("projects-container")}
+            >
               PROJECTS
             </div>{" "}
-            &nbsp;
-            <div onClick={() => handleNavigationClick("contact-container")}>
+            &nbsp; &nbsp;
+            <div
+              style={{ cursor: "pointer" }}
+              onClick={() => handleNavigationClick("contact-container")}
+            >
               CONNECT
             </div>{" "}
-            &nbsp;
+            &nbsp; &nbsp;
           </Box>
 
           {/*pages box for mobile size */}

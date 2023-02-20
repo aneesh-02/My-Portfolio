@@ -7,22 +7,49 @@ import snakeSc from "./Images/snakeSc.png";
 import GvSc from "./Images/GvSc.png";
 import tttSc from "./Images/tttSc.png";
 import TodoSc from "./Images/TodoSc.png";
+import flappy from "./Images/flappySc.png";
+import DGSc from "./Images/DGSc.png";
+import counter from "./Images/counterSc.png";
 
 const Projects = () => {
   return (
     <Container maxWidth="xl" id="projects-container">
       <ProjectCard
+        title="Daily Greetings"
+        image={DGSc}
+        description="Personal Dashboard App"
+        description2="JavaScript, Ajax, jQuery, REST API, Git"
+        path1="https://aneesh-02.github.io/Daily-Greetings/"
+        path2="https://github.com/aneesh-02/Daily-Greetings"
+        details="• Created a personal organization app with dashboard functionality.
+        • Integrated multiple REST APIs to dynamically display real-time weather, inspirational quotes, and visually captivating backgrounds.
+        • Featured a user-friendly to-do list, enabling easy creation, viewing, and deletion of tasks.
+        • Utilized jQuery to simplify DOM manipulation providing faster, seamless user experience.
+        • Implemented efficient data caching using Ajax to minimize the overhead of repeated network calls and enhance performance."
+      />
+
+      <ProjectCard
         title="GetVaxxed"
         image={GvSc}
         description="Vaccination appointment booking website"
         description2="HTML, CSS, JavaScript, Bootstrap, jQuery"
-        path1=""
+        path1="https://aneesh-02.github.io/Get-Vaxxed/"
         path2="https://github.com/aneesh-02/Get-Vaxxed"
         details="• Designed a website for booking Covid-19 vaccine appointments. 
         • Implemented authentication for login page. 
         • The website chronologically walks the user through being eligible, selecting the vaccine dose, clinic, date, time, confirmation etc. 
         • Created a page to view, edit and delete the appointments as well. 
         • Ensured a consistent user-friendly interface using Bootstrap. • Performed Usability testing with the help of volunteers."
+      />
+      <ProjectCard
+        title="Flappy Bird"
+        image={flappy}
+        description="Flappy Bird Web Game"
+        description2="HTML Canva, JavaScript"
+        path1="https://aneesh-02.github.io/Flappy-Bird/"
+        path2="https://github.com/aneesh-02/Flappy-Bird"
+        details="• Built a web-based classic Flappy Bird game using JavaScript for game logic and HTML canvas for animations. 
+        • By utilizing GitHub pages, the developed game was hosted for public access."
       />
       <ProjectCard
         title="Snake Game"
@@ -39,7 +66,7 @@ const Projects = () => {
       <ProjectCard
         title="Soundash"
         image={SdSc}
-        description="Vaccination appointment booking website"
+        description="Music Streaming website"
         description2="HTML, CSS"
         path1=""
         path2="https://github.com/aneesh-02/Soundash"
@@ -59,6 +86,27 @@ const Projects = () => {
         • App allows users to record, retrieve, edit and delete entries from the database. 
         • Used Window Builder library to design the application interface."
       />
+
+      <ProjectCard
+        title="Calculator"
+        image={calculatorSc}
+        description="Online Calculator website"
+        description2="HTML, CSS, JavaScript"
+        path1=""
+        path2="https://github.com/aneesh-02/Calculator"
+        details="• Developed a calculator with a user-friendly GUI.
+        • Calculator can perform basic arithmetic functions while handling decimal and negative numbers. "
+      />
+      <ProjectCard
+        title="Counter"
+        image={counter}
+        description="Online Counter"
+        description2="HTML, CSS, JavaScript"
+        path1="https://aneesh-02.github.io/Flappy-Bird/"
+        path2="https://github.com/aneesh-02/Flappy-Bird"
+        details="• Built a web-based classic Flappy Bird game using JavaScript for game logic and HTML canvas for animations. 
+        • By utilizing GitHub pages, the developed game was hosted for public access."
+      />
       <ProjectCard
         title="Tic-Tac-Toe"
         image={tttSc}
@@ -69,16 +117,6 @@ const Projects = () => {
         details="• Developed a Java console application to implement a 3x3 Tic-Tac-Toe game. 
         • The game can be played by a single user against the CPU.
         • Used Junit to test the edge cases and ensure seamless functionality."
-      />
-      <ProjectCard
-        title="Calculator"
-        image={calculatorSc}
-        description="Online Calculator website"
-        description2="HTML, CSS, JavaScript"
-        path1=""
-        path2="https://github.com/aneesh-02/Calculator"
-        details="• Developed a calculator with a user-friendly GUI.
-        • Calculator can perform basic arithmetic functions while handling decimal and negative numbers. "
       />
     </Container>
   );
