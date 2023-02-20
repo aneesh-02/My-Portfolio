@@ -8,6 +8,12 @@ body {
   /* background-image: url(https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg); */
 }
 
+@media only screen and (max-width: 899px) {
+  #home-buttons {
+      display: none;
+  } 
+}
+
 a:link {
   text-decoration: none;
 }
@@ -22,7 +28,8 @@ a:visited {
 
 #AppBar {
 /* background-color: rgba(0, 0, 0); */
-/* position: sticky; */
+position: fixed;
+z-index: 10;
 }
 
 section {
@@ -51,6 +58,7 @@ section {
 {
   /* right: 34%; */
   position: relative;
+  z-index: 9;
 }
 
 #AboutCard

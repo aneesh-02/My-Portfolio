@@ -21,18 +21,15 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
-  const handleSkillsClick = () => {
-    const skillsElement = document.getElementById("skills-container"); // Get the Skills component by its ID
-    skillsElement.scrollIntoView({ behavior: "smooth" });
+  const handleNavigationClick = (containerId) => {
+    const containerElement = document.getElementById(containerId);
+    containerElement.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleProjectsClick = () => {
-    const skillsElement = document.getElementById("projects-container"); // Get the Skills component by its ID
-    skillsElement.scrollIntoView({ behavior: "smooth" });
-  };
-  const handleConnectClick = () => {
-    const skillsElement = document.getElementById("contact-container"); // Get the Skills component by its ID
-    skillsElement.scrollIntoView({ behavior: "smooth" });
+  const handleMenuNavigationClick = (containerId) => {
+    const containerElement = document.getElementById(containerId);
+    console.log(containerElement);
+    containerElement.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -60,9 +57,18 @@ function ResponsiveAppBar() {
 
           {/* pages box for normal size   */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <div onClick={handleSkillsClick}>SKILLS</div> &nbsp;
-            <div onClick={handleProjectsClick}>PROJECTS</div> &nbsp;
-            <div onClick={handleConnectClick}>CONNECT</div> &nbsp;
+            <div onClick={() => handleNavigationClick("skills-container")}>
+              SKILLS
+            </div>{" "}
+            &nbsp;
+            <div onClick={() => handleNavigationClick("projects-container")}>
+              PROJECTS
+            </div>{" "}
+            &nbsp;
+            <div onClick={() => handleNavigationClick("contact-container")}>
+              CONNECT
+            </div>{" "}
+            &nbsp;
           </Box>
 
           {/*pages box for mobile size */}
@@ -100,9 +106,30 @@ function ResponsiveAppBar() {
             >
               <MenuItem>
                 <Typography textAlign="center">
-                  <div onClick={handleSkillsClick}>SKILLS</div> &nbsp;
-                  <div onClick={handleProjectsClick}>PROJECTS</div> &nbsp;
-                  <div onClick={handleConnectClick}>CONNECT</div> &nbsp;
+                  <div
+                    onClick={() =>
+                      handleMenuNavigationClick("skills-container")
+                    }
+                  >
+                    SKILLS
+                  </div>{" "}
+                  &nbsp;
+                  <div
+                    onClick={() =>
+                      handleMenuNavigationClick("projects-container")
+                    }
+                  >
+                    PROJECTS
+                  </div>{" "}
+                  &nbsp;
+                  <div
+                    onClick={() =>
+                      handleMenuNavigationClick("contact-container")
+                    }
+                  >
+                    CONNECT
+                  </div>{" "}
+                  &nbsp;
                 </Typography>
               </MenuItem>
             </Menu>
