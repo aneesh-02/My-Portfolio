@@ -6,7 +6,7 @@ import SdSc from "./Images/SdSc.png";
 import snakeSc from "./Images/snakeSc.png";
 import GvSc from "./Images/GvSc.png";
 import tttSc from "./Images/tttSc.png";
-import TodoSc from "./Images/TodoSc.png";
+import BrSc from "./Images/BrSc.png";
 import flappy from "./Images/flappySc.png";
 import DGSc from "./Images/DGSc.png";
 import counter from "./Images/counterSc.png";
@@ -27,7 +27,19 @@ const Projects = () => {
         • Utilized jQuery to simplify DOM manipulation providing faster, seamless user experience.
         • Implemented efficient data caching using Ajax to minimize the overhead of repeated network calls and enhance performance."
       />
-
+      <ProjectCard
+        title="Book Realm"
+        image={BrSc}
+        description="Java Library Management System"
+        description2="Java, Swing, JDBC, MySQL, XAMPP"
+        path1=""
+        path2="https://github.com/aneesh-02/Book-Realm"
+        details="• Created a Java Window Application to manage a database system.
+        • Implemented a MySQL database using phpMyAdmin and XAMPP server.
+        • Created a Signup and Login page to authenticate users and enable new user registration.
+        • Enabled the recording, retrieval, editing, and deletion of entries from the database.
+        • Incorporated JDBC for database connectivity and Java Swing for the GUI."
+      />
       <ProjectCard
         title="GetVaxxed"
         image={GvSc}
@@ -52,18 +64,6 @@ const Projects = () => {
         • By utilizing GitHub pages, the developed game was hosted for public access."
       />
       <ProjectCard
-        title="Snake Game"
-        image={snakeSc}
-        description="Java snake game application"
-        description2="Java, Swing, AWT, JPanel"
-        path1=""
-        path2="https://github.com/aneesh-02/Snake"
-        details="• Developed a classic 2D Snake Game in Java using Swing framework. 
-        • Used Java Abstract Window Toolkit to design the Graphical User Interface of the application.
-        • Applied various concepts like JPanel, JFrame and ActionListeners to ensure integrity of the project.
-        • Deployed the project as a JAR file to enhance security of the code and provide easy access to the user."
-      />
-      <ProjectCard
         title="Soundash"
         image={SdSc}
         description="Music Streaming website"
@@ -75,16 +75,16 @@ const Projects = () => {
         • Used various CSS concepts like flex display, animations and responsive design to ensure integrity of the project."
       />
       <ProjectCard
-        title="ToDos"
-        image={TodoSc}
-        description="Java To-dos List application"
-        description2="Java, Swing, JDBC, MySQL, XAMPP"
+        title="Snake Game"
+        image={snakeSc}
+        description="Java snake game application"
+        description2="Java, Swing, AWT, JPanel"
         path1=""
-        path2="https://github.com/aneesh-02/ToDo-App"
-        details="• Created a Java Window Application to manage a database system.
-        • Implemented the database in MySQL using phpMyAdmin and XAMPP server. 
-        • App allows users to record, retrieve, edit and delete entries from the database. 
-        • Used Window Builder library to design the application interface."
+        path2="https://github.com/aneesh-02/Snake"
+        details="• Developed a classic 2D Snake Game in Java using Swing framework. 
+        • Used Java Abstract Window Toolkit to design the Graphical User Interface of the application.
+        • Applied various concepts like JPanel, JFrame and ActionListeners to ensure integrity of the project.
+        • Deployed the project as a JAR file to enhance security of the code and provide easy access to the user."
       />
 
       <ProjectCard

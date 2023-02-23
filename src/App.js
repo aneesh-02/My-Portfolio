@@ -16,7 +16,7 @@ const theme = createTheme({
       main: "#f44336", // a shade of red as the secondary color
     },
     background: {
-      default: "#f5f5f5", // a light gray background color
+      default:"#68bcda", // a light gray background color
     },
   },
   typography: {
