@@ -28,7 +28,7 @@ const card = (
       <CardActions>
         <br />
         <br />
-        <a href={resume}>
+        <a href="https://github.com/aneesh-02/Resume/blob/main/AneeshSharmaResume.pdf">
           <Button size="medium" variant="contained">
             My Resume
           </Button>
