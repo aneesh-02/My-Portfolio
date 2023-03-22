@@ -19,7 +19,7 @@ const card = (
       <Typography sx={{ mb: 1.5 }} color="text.secondary"></Typography>
       <Typography variant="body1">
         A highly skilled and motivated Computer Science Graduate with
-        professional experience in Software Analyses and Testing.
+        professional experience in Software Development, Analyses and Testing.
         <br />
         Equipped with a solid foundation in software engineering and a range of
         programming languages and technologies.

@@ -56,7 +56,7 @@ const card = (
         </Button>{" "}
       </a>
       &nbsp;
-      <a href={resume}>
+      <a href="https://github.com/aneesh-02/Resume/blob/main/AneeshSharmaResume.pdf">
         <Button size="small" variant="contained">
           <ArticleIcon /> &nbsp; Resume
         </Button>

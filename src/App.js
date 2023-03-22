@@ -9,14 +9,15 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
+    // mode: "dark",
     primary: {
-      main: "#2196f3", // a shade of blue as the primary color
+      main: "#5886b5", // a shade of blue as the primary color
     },
     secondary: {
-      main: "#f44336", // a shade of red as the secondary color
+      main: "#2ec5d3", // a shade of red as the secondary color
     },
     background: {
-      default:"#68bcda", // a light gray background color
+      default: "#68bcda", // a light gray background color
     },
   },
   typography: {

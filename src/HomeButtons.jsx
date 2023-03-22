@@ -24,7 +24,7 @@ export default function HomeButtons() {
           // spacing={2}
         >
           <a href="mailto:aneeshsharmachd@gmail.com">
-            <Fab color="primary" aria-label="add" size="small">
+            <Fab color="primary" aria-label="add" size="medium">
               <Tooltip
                 title="Email"
                 placement="right"
@@ -37,7 +37,7 @@ export default function HomeButtons() {
           </a>
           <br />
           <a href="https://github.com/aneesh-02">
-            <Fab color="primary" aria-label="add" size="small">
+            <Fab color="primary" aria-label="add" size="medium">
               <Tooltip
                 title="GitHub"
                 placement="right"
@@ -50,7 +50,7 @@ export default function HomeButtons() {
           </a>
           <br />
           <a href="https://www.linkedin.com/in/aneesh-sharma-02/">
-            <Fab color="primary" aria-label="add" size="small">
+            <Fab color="primary" aria-label="add" size="medium">
               <Tooltip
                 title="LinkedIn"
                 placement="right"

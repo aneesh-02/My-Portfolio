@@ -44,8 +44,8 @@ export default function ProjectCard(props) {
         />
         <br />
         <Typography variant="body2" color="text.secondary">
-          <p class="experience-description text-justify">{props.description}</p>
-          <p class="experience-description text-justify">
+          <p class="experience-description text-justify" id="project-description">{props.description}</p>
+          <p class="experience-description text-justify" id="project-description2" >
             {props.description2}
           </p>
         </Typography>
