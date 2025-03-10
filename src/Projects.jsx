@@ -15,17 +15,15 @@ const Projects = () => {
   return (
     <Container maxWidth="xl" id="projects-container">
       <ProjectCard
-        title="Daily Greetings"
+        title="Daily Desk"
         image={DGSc}
         description="Personal Dashboard App"
-        description2="JavaScript, Ajax, jQuery, REST API, Git"
-        path1="https://aneesh-02.github.io/Daily-Greetings/"
-        path2="https://github.com/aneesh-02/Daily-Greetings"
+        description2="HTML, CSS, JavaScript, REST API, Git"
+        path1="https://aneesh-02.github.io/Daily-Desk/"
+        path2="https://aneesh-02.github.io/Daily-Desk/"
         details="• Created a personal organization app with dashboard functionality.
         • Integrated multiple REST APIs to dynamically display real-time weather, inspirational quotes, and visually captivating backgrounds.
-        • Featured a user-friendly to-do list, enabling easy creation, viewing, and deletion of tasks.
-        • Utilized jQuery to simplify DOM manipulation providing faster, seamless user experience.
-        • Implemented efficient data caching using Ajax to minimize the overhead of repeated network calls and enhance performance."
+        • Featured a user-friendly to-do list, enabling easy creation, viewing, and deletion of tasks."
       />
       <ProjectCard
         title="Book Realm"
